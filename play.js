@@ -83,7 +83,7 @@ onKeyDown('a', ()=>{
 const turtle = "./turtle.png"
 
 loadSprite("turtle", turtle);
-const player1 = add([sprite("turtle"), pos(2050, 80), area(), body()]);
+const player1 = add([sprite("turtle"), pos(950, 80), area(), body()]);
 onKeyPress("up", () => {
 	if (player1.grounded()) {
 		player1.jump(1000);
@@ -274,7 +274,7 @@ pacman.onCollide("hamster", (hamster) => {
 	}
 
 });
-onKeyPress("5", () => {
+onKeyPress("2", () => {
 	if (pacman.grounded()) {
 		pacman.jump(1000);
 	}
@@ -286,7 +286,7 @@ onKeyDown('3', ()=>{
 	pacman.flipX();
 });
 
-onKeyDown('', ()=>{
+onKeyDown('1', ()=>{
 	pacman.move(-SPEED, 0)
 	pacman.flipX(-1);
 })
